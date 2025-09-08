@@ -1,2 +1,7 @@
 #IDE files
 .idea
+
+#Psycopg cache
+timetracker/__pycache__
+tt_app/__pycache__
+tt_app/migrations/__pycache__
