@@ -1,9 +1,4 @@
-!#/bin/bash
-
-until pg_isready -h db -p 5432 -U user; do
-  echo "Waiting for PostgreSQL..."
-  sleep 2
-done
+#!/bin/bash
 
 python manage.py migrate
 
@@ -13,4 +8,4 @@ export DJANGO_SUPERUSER_PASSWORD="s@mplePassword"
 
 python manage.py createsuperuser --noinput
 
-python manage.py runserver
+python manage.py runserver 0.0.0.0:8000
