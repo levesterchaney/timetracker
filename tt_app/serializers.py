@@ -46,4 +46,4 @@ class TimesheetSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Timesheet
-        fields = ["id", "description", "rate", "entries", "created_at"]
+        fields = ["id", "description", "rate", "entries", "total_time", "total_cost", "created_at"]
